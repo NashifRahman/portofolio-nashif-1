@@ -1,6 +1,6 @@
 function VerticalTimeline() {
   return (
-    <div className="flex flex-col items-center mr-5">
+    <div className="hidden md:flex flex-col items-center md:mr-5">
       {/* Garis Vertikal */}
       <div className="w-1 bg-gray-300 h-[164px] relative">
         {/* Titik Atas */}

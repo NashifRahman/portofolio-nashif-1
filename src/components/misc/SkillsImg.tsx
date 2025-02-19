@@ -6,12 +6,12 @@ import {motion} from "framer-motion"
 function SkillsImg(){
 
   return (
-    <div className="flex justify-between">
+    <div className=" grid grid-cols-3 lg:flex justify-between">
         
       {[
         { icon: <FontAwesomeIcon icon={faHtml5} className=" text-orange-500" size='4x' />, href: "#" },
         { icon: <FontAwesomeIcon icon={faCss3} className=" text-blue-600" size='4x'/>, href: "#" },
-        { icon: <SiTailwindcss className="h-16 w-16 text-blue-500" />, href: "#" },
+        { icon: (<div className='flex items-center justify-center'><SiTailwindcss className="h-16 w-16 text-blue-500"/></div>), href: "#" },
         { icon: <FontAwesomeIcon icon={faJs} className=" text-yellow-300" size='4x'/>, href: "#" },
         { icon: <FontAwesomeIcon icon={faReact} className=" text-sky-300" size='4x'/>, href: "#" },
         { icon: <FontAwesomeIcon icon={faNodeJs} className=" text-green-400" size='4x'/>, href: "#" },
