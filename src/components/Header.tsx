@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import ProfilePic from "../img/logonashif.png"
+
 
 const Header=()=>{
 
@@ -8,7 +10,8 @@ const Header=()=>{
     return(
         <header className="py-6 px-3 md:px-6 flex items-center justify-between">
             {/* <h1 className="text-red-500">bismillah</h1> */}
-            <a href="/" className="hidden md:block p-2 rounded-md text-xl font-semibold text-purple-600 hover:bg-slate-800 transition-colors">Nashif Rahman</a>
+            {/* <a href="/" className="hidden md:block p-2 rounded-md text-xl font-semibold text-purple-600 hover:bg-slate-800 transition-colors">Nashif Rahman</a> */}
+            <a href="/"><img src={ProfilePic} className="w-44 py-2 px-3 rounded-lg hover:bg-slate-800 transition-colors"/></a>
 
             {/* untuk hamburger button */}
             <button className="md:hidden p-2 rounded-lg hover:bg-slate-800 transition-colors" onClick={() => setIsOpen(!isOpen)}>
